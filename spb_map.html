@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ff7afc7d9a49bbd312e35671623cacd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ff7afc7d9a49bbd312e35671623cacd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ff7afc7d9a49bbd312e35671623cacd = L.map(
+                "map_8ff7afc7d9a49bbd312e35671623cacd",
+                {
+                    center: [59.9343, 30.3351],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d7639e43629f980cdb76f8572bbf5b8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5d7639e43629f980cdb76f8572bbf5b8.addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var marker_e9f22c3d256fb96ccbec1aafba881ebb = L.marker(
+                [59.9343, 30.3351],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_427572e9b06702421be8d6bf4bb78e05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a9b16d159b43af4254cb450a83c02d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7cca7f34c25b3c21d7378704eb15a2a = $(`<div id="html_b7cca7f34c25b3c21d7378704eb15a2a" style="width: 100.0%; height: 100.0%;">Центр Санкт-Петербурга</div>`)[0];
+                popup_2a9b16d159b43af4254cb450a83c02d2.setContent(html_b7cca7f34c25b3c21d7378704eb15a2a);
+            
+        
+
+        marker_e9f22c3d256fb96ccbec1aafba881ebb.bindPopup(popup_2a9b16d159b43af4254cb450a83c02d2)
+        ;
+
+        
+    
+    
+                marker_e9f22c3d256fb96ccbec1aafba881ebb.setIcon(icon_427572e9b06702421be8d6bf4bb78e05);
+            
+    
+            var marker_1c3519e3aec533a5b825f059e492187e = L.marker(
+                [59.86405903858808, 30.224000947507793],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_55dbb5f5ac326dfddd1b44b30b4d46a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc84e12518e93a82c65699fe8744b440 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e358433b0f81890b58b0f8221a32dce8 = $(`<div id="html_e358433b0f81890b58b0f8221a32dce8" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 8,282,690 руб.</div>`)[0];
+                popup_dc84e12518e93a82c65699fe8744b440.setContent(html_e358433b0f81890b58b0f8221a32dce8);
+            
+        
+
+        marker_1c3519e3aec533a5b825f059e492187e.bindPopup(popup_dc84e12518e93a82c65699fe8744b440)
+        ;
+
+        
+    
+    
+                marker_1c3519e3aec533a5b825f059e492187e.setIcon(icon_55dbb5f5ac326dfddd1b44b30b4d46a6);
+            
+    
+            var marker_1de28182f6770f0ee1e153c436418969 = L.marker(
+                [59.88285105575235, 30.404771039135138],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_4963e9252de031c620522aa74f4a05c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b52773d654e1fdb9e34dab8ee6e975c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e5111ae58fbcc9bb122a329a557aeaf = $(`<div id="html_2e5111ae58fbcc9bb122a329a557aeaf" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 7,346,163 руб.</div>`)[0];
+                popup_6b52773d654e1fdb9e34dab8ee6e975c.setContent(html_2e5111ae58fbcc9bb122a329a557aeaf);
+            
+        
+
+        marker_1de28182f6770f0ee1e153c436418969.bindPopup(popup_6b52773d654e1fdb9e34dab8ee6e975c)
+        ;
+
+        
+    
+    
+                marker_1de28182f6770f0ee1e153c436418969.setIcon(icon_4963e9252de031c620522aa74f4a05c8);
+            
+    
+            var marker_47998a04f7999b3ad292fa7891a9fed3 = L.marker(
+                [60.03673382335275, 30.498269837482276],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_c1fa5ba54b005574b71fb9d88e4bd627 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_112db78de3752e0480fe65521b9dca95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea96873ec90610ca0f10faf9b565ebb3 = $(`<div id="html_ea96873ec90610ca0f10faf9b565ebb3" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 10,576,806 руб.</div>`)[0];
+                popup_112db78de3752e0480fe65521b9dca95.setContent(html_ea96873ec90610ca0f10faf9b565ebb3);
+            
+        
+
+        marker_47998a04f7999b3ad292fa7891a9fed3.bindPopup(popup_112db78de3752e0480fe65521b9dca95)
+        ;
+
+        
+    
+    
+                marker_47998a04f7999b3ad292fa7891a9fed3.setIcon(icon_c1fa5ba54b005574b71fb9d88e4bd627);
+            
+    
+            var marker_b267f356f6c46977875809db8c79e949 = L.marker(
+                [59.9409964981719, 30.38461758971093],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_afebf78445e52b417bde4deff839f97e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41911d21c4eedaf78cd13ae983969bc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51a76c576381aed3bde24a335a786b0a = $(`<div id="html_51a76c576381aed3bde24a335a786b0a" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 11,413,943 руб.</div>`)[0];
+                popup_41911d21c4eedaf78cd13ae983969bc6.setContent(html_51a76c576381aed3bde24a335a786b0a);
+            
+        
+
+        marker_b267f356f6c46977875809db8c79e949.bindPopup(popup_41911d21c4eedaf78cd13ae983969bc6)
+        ;
+
+        
+    
+    
+                marker_b267f356f6c46977875809db8c79e949.setIcon(icon_afebf78445e52b417bde4deff839f97e);
+            
+    
+            var marker_e64af2f693ad2da8f698b87a214becb5 = L.marker(
+                [59.86843809168715, 30.521090556897864],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_4d947f9d1443d421febb7dcceb3f446b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6575bae35e59a2197c1befdfa4c6b83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbb7adbc2e7482a73043e0675784a8aa = $(`<div id="html_cbb7adbc2e7482a73043e0675784a8aa" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 10,603,337 руб.</div>`)[0];
+                popup_d6575bae35e59a2197c1befdfa4c6b83.setContent(html_cbb7adbc2e7482a73043e0675784a8aa);
+            
+        
+
+        marker_e64af2f693ad2da8f698b87a214becb5.bindPopup(popup_d6575bae35e59a2197c1befdfa4c6b83)
+        ;
+
+        
+    
+    
+                marker_e64af2f693ad2da8f698b87a214becb5.setIcon(icon_4d947f9d1443d421febb7dcceb3f446b);
+            
+    
+            var marker_ceee0133ffe7ca00a60e98c47437179f = L.marker(
+                [60.04886826771141, 30.426586309939882],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_549ebe6cce2bd2b7b6d47292070a3efe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_989801c498e81ce4623b0ac7ef065e81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f15019569349014db4ecbfcf1f1c4aea = $(`<div id="html_f15019569349014db4ecbfcf1f1c4aea" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 10,339,084 руб.</div>`)[0];
+                popup_989801c498e81ce4623b0ac7ef065e81.setContent(html_f15019569349014db4ecbfcf1f1c4aea);
+            
+        
+
+        marker_ceee0133ffe7ca00a60e98c47437179f.bindPopup(popup_989801c498e81ce4623b0ac7ef065e81)
+        ;
+
+        
+    
+    
+                marker_ceee0133ffe7ca00a60e98c47437179f.setIcon(icon_549ebe6cce2bd2b7b6d47292070a3efe);
+            
+    
+            var marker_ddb6bc65236cdbcc6e828670b7b0e8d1 = L.marker(
+                [60.03953508723274, 30.45947675592508],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_e0e0229c31f073955d3f2f9d8fa79542 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b4e5b6604981f6dab499400a6371082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7338582b29422ec21c29424fae5bc0c0 = $(`<div id="html_7338582b29422ec21c29424fae5bc0c0" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 7,409,391 руб.</div>`)[0];
+                popup_3b4e5b6604981f6dab499400a6371082.setContent(html_7338582b29422ec21c29424fae5bc0c0);
+            
+        
+
+        marker_ddb6bc65236cdbcc6e828670b7b0e8d1.bindPopup(popup_3b4e5b6604981f6dab499400a6371082)
+        ;
+
+        
+    
+    
+                marker_ddb6bc65236cdbcc6e828670b7b0e8d1.setIcon(icon_e0e0229c31f073955d3f2f9d8fa79542);
+            
+    
+            var marker_971d44d1f25b61c2e2696247a797dc29 = L.marker(
+                [59.91560624474116, 30.232205455174366],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_8832b1f2dc774bda5aca7bb120760827 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4ac9bfa3fbe6862ed67f2456c910153 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a5fa1b21f6409740ee45c874c2ed777 = $(`<div id="html_3a5fa1b21f6409740ee45c874c2ed777" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 12,704,494 руб.</div>`)[0];
+                popup_f4ac9bfa3fbe6862ed67f2456c910153.setContent(html_3a5fa1b21f6409740ee45c874c2ed777);
+            
+        
+
+        marker_971d44d1f25b61c2e2696247a797dc29.bindPopup(popup_f4ac9bfa3fbe6862ed67f2456c910153)
+        ;
+
+        
+    
+    
+                marker_971d44d1f25b61c2e2696247a797dc29.setIcon(icon_8832b1f2dc774bda5aca7bb120760827);
+            
+    
+            var marker_b50ae39cb6c50a68eec3150fdcc5dc78 = L.marker(
+                [59.80473822870929, 30.52348745564694],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_c18434d0cfc8c3a9820d2e5799b69522 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0d1c2c1a3b828f0fe729841426f55e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c16d7157be7337ee8eb7c520ec56e0ed = $(`<div id="html_c16d7157be7337ee8eb7c520ec56e0ed" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 8,723,256 руб.</div>`)[0];
+                popup_e0d1c2c1a3b828f0fe729841426f55e0.setContent(html_c16d7157be7337ee8eb7c520ec56e0ed);
+            
+        
+
+        marker_b50ae39cb6c50a68eec3150fdcc5dc78.bindPopup(popup_e0d1c2c1a3b828f0fe729841426f55e0)
+        ;
+
+        
+    
+    
+                marker_b50ae39cb6c50a68eec3150fdcc5dc78.setIcon(icon_c18434d0cfc8c3a9820d2e5799b69522);
+            
+    
+            var marker_044fe638b02160e99a4391674c52ad6f = L.marker(
+                [59.802706185956694, 30.451738321439585],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_827ef796e6bdefa9865652a4b0741471 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa0d394c3245adc1b833098a1d9b144c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbbce812e959f737a7767bbc6b1f0183 = $(`<div id="html_cbbce812e959f737a7767bbc6b1f0183" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 10,803,041 руб.</div>`)[0];
+                popup_aa0d394c3245adc1b833098a1d9b144c.setContent(html_cbbce812e959f737a7767bbc6b1f0183);
+            
+        
+
+        marker_044fe638b02160e99a4391674c52ad6f.bindPopup(popup_aa0d394c3245adc1b833098a1d9b144c)
+        ;
+
+        
+    
+    
+                marker_044fe638b02160e99a4391674c52ad6f.setIcon(icon_827ef796e6bdefa9865652a4b0741471);
+            
+    
+            var marker_b0a01cb7a35100e517d2f5d2a0826ca4 = L.marker(
+                [59.917652064646234, 30.28871495355012],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_f38bd87387b652feb6d30d9d33a59c3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2254c0e59fc5ee045be3e93034056521 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f203915cade7d991639323b913128aed = $(`<div id="html_f203915cade7d991639323b913128aed" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 14,004,528 руб.</div>`)[0];
+                popup_2254c0e59fc5ee045be3e93034056521.setContent(html_f203915cade7d991639323b913128aed);
+            
+        
+
+        marker_b0a01cb7a35100e517d2f5d2a0826ca4.bindPopup(popup_2254c0e59fc5ee045be3e93034056521)
+        ;
+
+        
+    
+    
+                marker_b0a01cb7a35100e517d2f5d2a0826ca4.setIcon(icon_f38bd87387b652feb6d30d9d33a59c3e);
+            
+    
+            var marker_4d21207b5bc3d2e3a734d9640425aa72 = L.marker(
+                [59.92748888408865, 30.295527795754687],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_11f52f1ce271e01a1c9565b19f46f220 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca385ee8a55dc6ed327b3d8b2da824d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_812f30057122d4952436d9eac2fa01f1 = $(`<div id="html_812f30057122d4952436d9eac2fa01f1" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 7,443,137 руб.</div>`)[0];
+                popup_ca385ee8a55dc6ed327b3d8b2da824d3.setContent(html_812f30057122d4952436d9eac2fa01f1);
+            
+        
+
+        marker_4d21207b5bc3d2e3a734d9640425aa72.bindPopup(popup_ca385ee8a55dc6ed327b3d8b2da824d3)
+        ;
+
+        
+    
+    
+                marker_4d21207b5bc3d2e3a734d9640425aa72.setIcon(icon_11f52f1ce271e01a1c9565b19f46f220);
+            
+    
+            var marker_fa391c9125053e7966a4812f306c678b = L.marker(
+                [59.82523218026331, 30.30783738476409],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_3f4237c607e601238237129ff34187a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d314c93a40df25e5922d80a141c999c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f301d377fd8968cf33e23781039318b5 = $(`<div id="html_f301d377fd8968cf33e23781039318b5" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 9,855,994 руб.</div>`)[0];
+                popup_1d314c93a40df25e5922d80a141c999c.setContent(html_f301d377fd8968cf33e23781039318b5);
+            
+        
+
+        marker_fa391c9125053e7966a4812f306c678b.bindPopup(popup_1d314c93a40df25e5922d80a141c999c)
+        ;
+
+        
+    
+    
+                marker_fa391c9125053e7966a4812f306c678b.setIcon(icon_3f4237c607e601238237129ff34187a3);
+            
+    
+            var marker_86f6c1e4bca09b88a3e4e545cbb0fe54 = L.marker(
+                [60.053984721169016, 30.51143106883851],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_1f371e7f3099f73cfb14edcda1bdff5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60aac419c8849a7727098a8b63237470 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_789af0fd2ed0072eff4f5c596bbfe43c = $(`<div id="html_789af0fd2ed0072eff4f5c596bbfe43c" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 8,963,080 руб.</div>`)[0];
+                popup_60aac419c8849a7727098a8b63237470.setContent(html_789af0fd2ed0072eff4f5c596bbfe43c);
+            
+        
+
+        marker_86f6c1e4bca09b88a3e4e545cbb0fe54.bindPopup(popup_60aac419c8849a7727098a8b63237470)
+        ;
+
+        
+    
+    
+                marker_86f6c1e4bca09b88a3e4e545cbb0fe54.setIcon(icon_1f371e7f3099f73cfb14edcda1bdff5c);
+            
+    
+            var marker_c08f2e92514fcbd9d6c396251c46e325 = L.marker(
+                [59.989288536793175, 30.23368892620516],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_6e769890e0f71d55b9f9ed1375b2ca6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bef016d2db03639b7644fcee377f07a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c8d869edbd653a8584f28ae8596d132 = $(`<div id="html_7c8d869edbd653a8584f28ae8596d132" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 9,444,648 руб.</div>`)[0];
+                popup_6bef016d2db03639b7644fcee377f07a.setContent(html_7c8d869edbd653a8584f28ae8596d132);
+            
+        
+
+        marker_c08f2e92514fcbd9d6c396251c46e325.bindPopup(popup_6bef016d2db03639b7644fcee377f07a)
+        ;
+
+        
+    
+    
+                marker_c08f2e92514fcbd9d6c396251c46e325.setIcon(icon_6e769890e0f71d55b9f9ed1375b2ca6a);
+            
+    
+            var marker_310076d05eac18298d1fd735ab81cfc5 = L.marker(
+                [59.96757202845223, 30.211535258323632],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_5690384a8d309776abe53f34dda9b838 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89023725542b89c0fec81a9228a0fe05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec7fd5712b6769b5f9f7dc245bb0a203 = $(`<div id="html_ec7fd5712b6769b5f9f7dc245bb0a203" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 12,830,635 руб.</div>`)[0];
+                popup_89023725542b89c0fec81a9228a0fe05.setContent(html_ec7fd5712b6769b5f9f7dc245bb0a203);
+            
+        
+
+        marker_310076d05eac18298d1fd735ab81cfc5.bindPopup(popup_89023725542b89c0fec81a9228a0fe05)
+        ;
+
+        
+    
+    
+                marker_310076d05eac18298d1fd735ab81cfc5.setIcon(icon_5690384a8d309776abe53f34dda9b838);
+            
+    
+            var marker_b3f8502dd97d7909508e8eda7ff15ac2 = L.marker(
+                [60.003880975847345, 30.151549228901466],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_e65f09e9e32d45293b235b47b1ac5599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18128f8802f1a98e52723363063e26be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6eec14d438eff0829a228330fa0823f1 = $(`<div id="html_6eec14d438eff0829a228330fa0823f1" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 10,600,164 руб.</div>`)[0];
+                popup_18128f8802f1a98e52723363063e26be.setContent(html_6eec14d438eff0829a228330fa0823f1);
+            
+        
+
+        marker_b3f8502dd97d7909508e8eda7ff15ac2.bindPopup(popup_18128f8802f1a98e52723363063e26be)
+        ;
+
+        
+    
+    
+                marker_b3f8502dd97d7909508e8eda7ff15ac2.setIcon(icon_e65f09e9e32d45293b235b47b1ac5599);
+            
+    
+            var marker_b457d2d7bb587cf76b5d21585816f34c = L.marker(
+                [59.85496213506934, 30.21750756777826],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_230bbad82000eff40a0efc4483693830 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45551311bf67621cdc7bbd63e56fbc46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_298d244db8f4f417f93521890b15e6d2 = $(`<div id="html_298d244db8f4f417f93521890b15e6d2" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 7,992,608 руб.</div>`)[0];
+                popup_45551311bf67621cdc7bbd63e56fbc46.setContent(html_298d244db8f4f417f93521890b15e6d2);
+            
+        
+
+        marker_b457d2d7bb587cf76b5d21585816f34c.bindPopup(popup_45551311bf67621cdc7bbd63e56fbc46)
+        ;
+
+        
+    
+    
+                marker_b457d2d7bb587cf76b5d21585816f34c.setIcon(icon_230bbad82000eff40a0efc4483693830);
+            
+    
+            var marker_b821306901fe58cf141e0bdfcb1e6726 = L.marker(
+                [60.0250252708283, 30.168110214313433],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_4bf50018655e1cc582158a902ba7b1a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86c363df7daffd67291ae355cdfcd844 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d76edbf9fe61c1300c5f4fe9321f36a = $(`<div id="html_7d76edbf9fe61c1300c5f4fe9321f36a" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 10,792,419 руб.</div>`)[0];
+                popup_86c363df7daffd67291ae355cdfcd844.setContent(html_7d76edbf9fe61c1300c5f4fe9321f36a);
+            
+        
+
+        marker_b821306901fe58cf141e0bdfcb1e6726.bindPopup(popup_86c363df7daffd67291ae355cdfcd844)
+        ;
+
+        
+    
+    
+                marker_b821306901fe58cf141e0bdfcb1e6726.setIcon(icon_4bf50018655e1cc582158a902ba7b1a0);
+            
+    
+            var marker_1ce7cd5937878011e8bbcf994763644e = L.marker(
+                [59.953397844418326, 30.369711812446887],
+                {
+}
+            ).addTo(map_8ff7afc7d9a49bbd312e35671623cacd);
+        
+    
+            var icon_5a3e3889d68656cd31bc484032cf038c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb2eed4dd099d6537b9eb28bd9378c6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c4c5d59120ed1d35a7be1d0aa41f173 = $(`<div id="html_4c4c5d59120ed1d35a7be1d0aa41f173" style="width: 100.0%; height: 100.0%;">Квартира<br>Цена: 13,827,789 руб.</div>`)[0];
+                popup_fb2eed4dd099d6537b9eb28bd9378c6c.setContent(html_4c4c5d59120ed1d35a7be1d0aa41f173);
+            
+        
+
+        marker_1ce7cd5937878011e8bbcf994763644e.bindPopup(popup_fb2eed4dd099d6537b9eb28bd9378c6c)
+        ;
+
+        
+    
+    
+                marker_1ce7cd5937878011e8bbcf994763644e.setIcon(icon_5a3e3889d68656cd31bc484032cf038c);
+            
+</script>
+</html>
