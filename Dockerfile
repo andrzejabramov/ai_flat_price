@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Streamlit по умолчанию работает на порту 8501
-EXPOSE 8501
+EXPOSE 7860
 
 # Запускаем приложение. 
 # $PORT — это переменная окружения, которую автоматически передают Render и Railway.
